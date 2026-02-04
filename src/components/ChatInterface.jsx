@@ -166,7 +166,7 @@ function ChatInterface() {
 
     try {
       // Call backend
-      const response = await axios.post('http://localhost:5000/api/chat', {
+      const response = await axios.post('https://ai-chat-bot-backend-1-eio8.onrender.com/api/chat', {
         message: userMessage,
         conversationHistory: messages,
         userContext: userContext
